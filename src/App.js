@@ -67,14 +67,15 @@ class App extends React.Component {
       }
 
   showingStory = (city) => {
-    const huita = {
+    const arg = {
       target:{city:{value:''}} // очень жесткие костыли
     }
-    huita.target.city.value = city
-    this.get_weather(huita)
+    arg.target.city.value = city
+    this.get_weather(arg)
   }
 
   render() {
+
     return (<div className={['block']} >
       <Choosing weatherMetod={this.get_weather} makeStory={this.makingStory}/>
       <WInfo weatherState={this.state}/>

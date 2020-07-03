@@ -6,10 +6,10 @@ class Story extends React.Component{
   render(){
 
       return(
-        <div className="p">
+        <div className="story">
         {this.props.wArray.map((item, i) => {
             return (
-              <button key={i} city={item} onClick={() => this.props.showStory(item)} >{item}</button>
+              <button key={i} city={item} className='storyButton' onClick={() => this.props.showStory(item)} >{item}</button>
             )
         })}
         </div>

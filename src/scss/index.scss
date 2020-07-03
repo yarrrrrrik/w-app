@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v20-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v20-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+
+body{
+  // background: rgb(34,193,195);
+// background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(140,194,86,1) 48%, rgba(253,187,45,1) 100%) no-repeat;
+ background-size: 105% 105%;
+ background-position: 10% 10%;
+ // filter:blur(10px);
+ min-height: 1000px;
+ overflow-y: hidden;
+  *{
+    font-family:'Roboto';
+
+    color:rgb(51, 49, 49);
+
+  }
+}
+.bg-image{
+  position: absolute;
+  background: url('../images/bg.jpg');
+  width: 105%;
+  top:-10px;
+  left:-15px;
+  // height: 100%;
+
+ /* Add the blur effect */
+ filter: blur(8px);
+ -webkit-filter: blur(8px);
+
+ /* Full height */
+ height: 105%;
+  z-index: -10;
+ /* Center and scale the image nicely */
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.block{
+  margin: 10% auto;
+  width:800px;
+  height:500px;
+  display: flex;
+  position: relative;
+  // display: none;
+ //  box-shadow:
+ // inset rgba(0,0,0,.6) 0 -3px 8px,
+ // inset rgba(252,255,255,.7) 0 3px 8px,
+ // rgba(0,0,0,.8) 0 3px 8px -3px;
+
+  background: rgba(255, 255, 255, 0.14);
+}
+.left{
+  width: 30%;
+  display: flex;
+  // background: ;
+
+  form{
+    height: 20%;
+    width: 80%;
+    margin: 80% auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+
+    // -webkit-box-shadow: 0px 0px 5px 6px rgba(191,191,191,1);
+    // -moz-box-shadow: 0px 0px 5px 6px rgba(191,191,191,1);
+    // box-shadow: 0px 0px 5px 6px rgba(191,191,191,1);
+
+    .city{
+      width:100%;
+      height:35%;
+      margin-bottom: 10%;
+      border: none;
+      text-align: center;
+      font-family:'Roboto';
+      color:rgb(51, 49, 49);
+      background: rgba(252, 252, 252, 0.14)
+    }
+    .sub{
+      width:70%;
+      height: 1.3rem;
+      border: none;
+      font-family:'Roboto';
+      color:rgb(51, 49, 49);
+      background: rgba(252, 252, 252, 0.14);
+      &:focus{
+        border:none;
+        outline: none;
+        background: rgba(187, 187, 187, 0.15)
+      }
+    }
+  }
+}
+.right{
+  width: 70%;
+  // background: red;
+
+  .right_in{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    // background: red;
+    width: 100%;
+    height: 100%;
+    font-size: 1.2rem;
+    div{
+      width: 48.2%;
+      height: 19.8%;
+      padding-top: 3%;
+      text-align: center;
+    }
+    .city_info{
+      width: 100%;
+      text-align: center;
+    }
+    .w_icon{
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+}
+.story{
+  position: absolute;
+  display: flex;
+  top: -24px;
+}
+.storyButton{
+  margin-right: 3px;
+  color:rgb(51, 49, 49);
+  background: rgba(252, 252, 252, 0.14);
+  height: 1.5rem;
+  border: none;
+}
